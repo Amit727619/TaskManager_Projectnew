@@ -36,10 +36,12 @@ func getBookByID(w http.ResponseWriter, r *http.Request) {
 			json.NewEncoder(w).Encode(book)
 			return
 		}
+		
 	}
 
 	// If no book is found, return an empty response
 	json.NewEncoder(w).Encode(Book{})
+
 }
 
 func main() {
