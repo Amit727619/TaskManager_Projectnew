@@ -34,6 +34,7 @@ func (tm *TaskManager) AddUser(name string) {
 	tm.Users = append(tm.Users, newUser)
 	tm.Counter++
 	fmt.Println("User added successfully.")
+	
 }
 
 // AddTaskToUser adds a new task to a specific user
